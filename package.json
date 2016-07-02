@@ -1,0 +1,28 @@
+{
+  "name": "react-redux-cli",
+  "version": "1.0.0",
+  "description": "An opinionated CLI to make working on react with redux apps much faster.",
+  "main": "bin/redux.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "cli",
+    "generator",
+    "react.js",
+    "kit",
+    "app-kit",
+    "react-starter-kit",
+    "react-redux-starter-kit"
+  ],
+  "author": "James Lee <40129878@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "humps": "^1.1.0",
+    "minimist": "^1.2.0"
+  }
+}
