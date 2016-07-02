@@ -7,7 +7,7 @@ const subCommand = new Generate()
 
 commander.on('--help', () => {
   subCommand.printUserHelp()
-}
+})
 
 commander
   .version(version())

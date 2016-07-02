@@ -9,7 +9,7 @@ export default class SubCommand {
 
     this.environment = {
       ui: this.ui,
-      settings: this.settings,
+      settings: this.settings
     }
   }
 }

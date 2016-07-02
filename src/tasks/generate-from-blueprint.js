@@ -6,7 +6,36 @@ export default class extends Task {
     super(environment)
   }
 
+  // confirm blueprint exists
+  // go fetch blueprint object
+  // noramlize/setup args to be passed to install
+  // install the blueprint
   run(blueprintName, cliArgs) {
-    const mainBlueprint = this.lookupblueprint('blueprintName')
+    // if blueprint doesnt exist
+      // this.ui.writeError(
+        // 'this is not a valid blueprint. type help for help.. or w/e'
+      // );
+      // process.exit(1);
+    // }
+
+    const mainBlueprint = this.lookupBlueprint(blueprintName)
+
+    const entity = {
+      name: cliArgs.entity.name,
+      options: cliArgs.entity.options
+    }
+
+    const blueprintOptions = {
+      originalBlueprintName: blueprintName,
+      ui: this.ui,
+      settings: this.settings,
+      entity
+    }
+
+    mainBlueprint.install(blueprintOptions)
+  }
+
+  lookupBlueprint(name) {
+    return Blueprint.lookup(name)
   }
 }

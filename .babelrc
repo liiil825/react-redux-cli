@@ -1,10 +1,4 @@
 {
-  "presets": ["es2015", "stage-1", "react"],
-  "plugins": ["react-require", "babel-root-slash-import"],
-  "env": {
-    "test": {
-      "sourceMaps": "both"
-    }
-  }
+  "presets": ["es2015"]
 }
 
