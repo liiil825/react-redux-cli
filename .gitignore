@@ -1,0 +1,10 @@
+.idea/
+*/.idea/
+.DS_Store
+
+npm-debug.log
+node_modules
+.reduxrc
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
